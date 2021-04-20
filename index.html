@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <h1>hellow {{ name }}</h1>
+      <div id="app">
+      <img
+        v-bind:src="picture"
+        :alt="`${firstName} ${lastName}`"
+        :class="gender"
+      />
+      <h1>{{firstName}} {{lastName}}</h1>
+      <h3>Email: {{email}}</h3>
+      <button :class="gender" @click="getUser()">Get Random User</button>
     </div>
 
     <!-- development version, includes helpful console warnings -->

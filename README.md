@@ -4,4 +4,4 @@
  
  Vue.js Random User Generator
  
- <img src="image.png"/>
+ <img src="img/image.png"/>
